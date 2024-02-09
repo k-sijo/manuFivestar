@@ -1,0 +1,67 @@
+
+  .vision-mission-container {
+    display: flex;
+    flex-direction: row-reverse; /* Content and image are side by side */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .vision-mission-content {
+    font-family: cursive;
+    flex: 1; /* Content takes 1/2 of the container */
+    padding: 20px;
+    text-align: left; /* Content is aligned to the left */
+  }
+  
+  .vision-mission-content h1 {
+    font-family:cursive;
+    color: #141E42;
+    text-align: left;
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .vision-mission-content p {
+    color: #141E42;
+    font-family:cursive;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .vision-mission-image {
+    flex: 1; /* Image takes 1/2 of the container */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .vision-mission-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Media queries for tablet and mobile screens (optional) */
+  @media screen and (max-width: 768px) {
+    .vision-mission-container {
+        flex-direction: column; /* Stack content on top of the image for small screens */
+    }
+    .vision-mission-image img {
+      max-width: 90%;
+      height: auto;
+    }
+  
+    .vision-mission-content, .vision-mission-image {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+  
+    .vision-mission-content h1 {
+        font-size: 24px; /* Reduce font size for tablet and mobile */
+    }
+  
+    .vision-mission-content p {
+        font-size: 16px; /* Reduce font size for tablet and mobile */
+    }
+  }
+  

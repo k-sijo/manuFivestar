@@ -1,0 +1,67 @@
+
+  .company-container {
+    margin-top: 350px;
+    display: flex;
+    flex-direction: row; /* Display content and image side by side */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #04AFC3;
+  }
+  
+  .company-content {
+    flex: 1;
+    font-family:cursive;
+    padding: 20px;
+  }
+  
+  .company-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color:#141E42;
+  }
+  
+  .company-content p {
+    text-align: left;
+    font-family:cursive;
+    font-size: 18px;
+    color: #141E42;
+    line-height: 1.5;
+  }
+  
+  .company-image {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .company-image img {
+    max-width: 70%;
+    height: auto;
+  }
+  
+  /* Media queries for tablet and mobile screens */
+  @media screen and (max-width: 768px) {
+    .company-container {
+        flex-direction: column; /* Stack content on top of the image for small screens */
+        margin-top: -40px;
+
+    }
+    .company-image img {
+      max-width: 100%;
+      height: auto;
+    }
+    .company-content, .company-image {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+  
+    .company-content h1 {
+        font-size: 24px; /* Reduce font size for tablet and mobile */
+    }
+  
+    .company-content p {
+        font-size: 16px; /* Reduce font size for tablet and mobile */
+        font-family:cursive;
+    }
+  }
+  

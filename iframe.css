@@ -1,0 +1,29 @@
+.qualy-ifram{
+    margin-top: 50px;
+    font-family: cursive;
+    font-size: 30px
+}
+iframe {
+    margin-top: 20px;
+    max-width: 439px;
+    width: 440px;
+    height: auto;
+    border: 5px solid #141E42;
+    background-color:#f0f0f0;
+  }
+  
+        /* Media query for tablet screens */
+        @media screen and (max-width: 1023px) {
+            iframe {
+                height: 200px; /* Adjust the height as needed for tablets */
+            }
+        }
+  
+        /* Media query for mobile screens */
+          @media screen and (max-width: 768px) {
+            iframe {
+              width: 100%;
+              height: auto;
+            }
+          }
+        
